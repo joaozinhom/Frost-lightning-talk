@@ -1,5 +1,5 @@
 {
-  description = "Frost with presentation env with slidev";
+  description = "Slidev presentation environment";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -14,25 +14,26 @@
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             nodejs_20
-            nodePackages.npm
           ];
 
           shellHook = ''
-            echo "Slidev dev environment"
-            echo ""
+            # redirect npm global to writable dir inside project
+            export NPM_CONFIG_PREFIX="$PWD/.npm-global"
+            export PATH="$PWD/.npm-global/bin:$PATH"
 
-            # install slidev globally if not present
+            mkdir -p .npm-global
+
             if ! command -v slidev &> /dev/null; then
-              echo "installing slidev..."
+              echo "installing slidev locally..."
               npm install -g @slidev/cli
             fi
 
-            export PATH="$HOME/.npm-global/bin:$PATH"
-
-            echo "commands:"
+            echo ""
+            echo "Slidev ready. commands:"
             echo "  slidev slides.md        -- start dev server"
             echo "  slidev build slides.md  -- build static"
             echo "  slidev export slides.md -- export to PDF"
+            echo ""
           '';
         };
       });
