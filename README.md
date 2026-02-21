@@ -15,3 +15,5 @@ This repositorie contains the matterial of study for my lightning talk about Fro
 * the papper(probably will use pratically only this one): https://eprint.iacr.org/2020/852.pdf
 
 * frostnap frost main page with some more links: https://frostsnap.com/docs/frost-protocol.html
+
+* a concept: https://medium.com/@jjimny99/title-exploring-frost-protocol-for-secure-bitcoin-multi-signatures-03970f7e5ccb

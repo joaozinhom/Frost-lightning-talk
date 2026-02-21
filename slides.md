@@ -1,6 +1,6 @@
 ---
 theme: default
-background: ./images/cover.png
+background: ./images_for_slides/cover.png
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -10,7 +10,7 @@ title: FROST
 
 # FROST: Flexible Round-Optimized Schnorr Threshold Signatures
 
-**Another crazy way to use Schnoor**
+**Another crazy way to use Schnorr**
 
 <div class="pt-12 text-gray-400 text-sm">
   joaozinhom
@@ -29,7 +29,7 @@ title: FROST
   <div class="text-white text-center max-w-2xl mx-auto leading-relaxed">
     <h2 class="text-2xl font-bold mb-4">Joãozinho</h2>
     <p class="text-gray-300 text-base">
-      Open sats grante working on krux-installer, and studying in 42 school.
+      Open sats grant working on krux-installer, and studying in 42 school.
     </p>
   </div>
 
@@ -37,104 +37,291 @@ title: FROST
 
 ---
 
-<div class="grid grid-cols-2 h-full">
+<div class="flex flex-col h-full items-center justify-center px-20">
 
-  <div class="flex flex-col justify-center px-12 border-r border-gray-700">
-    <h2 class="text-2xl font-bold mb-6 text-blue-400">Por que FROST?</h2>
-    <ul class="text-sm leading-loose text-gray-200 space-y-3">
-      <li>• ponto 1 — diferença de outras implementações</li>
-      <li>• ponto 2 — limitação dos esquemas anteriores</li>
-      <li>• ponto 3 — o problema de paralelismo</li>
-      <li>• ponto 4 — o ataque de Drijvers</li>
-    </ul>
+  <h2 class="text-4xl font-bold mb-10 text-green-400 self-start">What is this FROST?</h2>
+
+  <ul class="text-xl leading-relaxed text-gray-200 space-y-8">
+    <li>• Its a Schnorr scheme that uses to have multisigs n-of-m</li>
+    <li>• Its different from Nunchuck scheme that uses Taproot, and its different from simple Musigs</li>
+    <li>• Like simple Musigs and Nunchuck schemes its not possible to an external observer know how many participants are in this contract and even how many sign</li>
+  </ul>
+
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-blue-400">Why FROST?</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/advantages.png" class="max-h-full max-w-full object-contain" />
   </div>
+</div>
 
-  <div class="flex items-center justify-center px-8">
-    <img src="./images/intro1.png" class="max-h-80 object-contain" />
+---
+layout: center
+class: text-center
+---
+
+<div class="flex flex-col items-center justify-center h-full gap-6">
+  <div class="text-6xl">📖</div>
+  <h2 class="text-5xl font-bold text-yellow-300">Notations</h2>
+  <p class="text-gray-400 text-lg">Variables and symbols used throughout the protocol</p>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-yellow-300">Notations</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/notations1.png" class="max-h-full max-w-full object-contain" />
   </div>
-
 </div>
 
 ---
 
-<div class="grid grid-cols-2 h-full">
-
-  <div class="flex flex-col justify-center px-12 border-r border-gray-700">
-    <h2 class="text-2xl font-bold mb-6 text-green-400">Como funciona conceitualmente</h2>
-    <ul class="text-sm leading-loose text-gray-200 space-y-3">
-      <li>• ponto 1 — threshold e secret sharing</li>
-      <li>• ponto 2 — polinômio e shares</li>
-      <li>• ponto 3 — ninguém tem a chave completa</li>
-      <li>• ponto 4 — assinatura indistinguível de single-signer</li>
-    </ul>
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-yellow-300">Notations</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/notations2.png" class="max-h-full max-w-full object-contain" />
   </div>
+</div>
 
-  <div class="flex items-center justify-center px-8">
-    <img src="./images/intro2.png" class="max-h-80 object-contain" />
+---
+layout: center
+class: text-center
+---
+
+<div class="flex flex-col items-center justify-center h-full gap-6">
+  <div class="text-6xl">🔑</div>
+  <h2 class="text-5xl font-bold text-blue-300">KeyGen</h2>
+  <p class="text-gray-400 text-lg">Distributed key generation — no trusted dealer</p>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+<div class="flex flex-col items-center justify-center h-full gap-4">
+  <h2 class="text-4xl font-bold text-blue-300">KeyGen — Round 1</h2>
+  <p class="text-gray-400 text-base max-w-xl">Each participant generates their own polynomial and broadcasts commitments</p>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-blue-300">KeyGen — Round 1</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/keygen1_1.png" class="max-h-full max-w-full object-contain" />
   </div>
-
 </div>
 
 ---
 
-<div class="flex flex-col h-full justify-center items-center px-8">
-
-  <h2 class="text-xl font-bold mb-6 text-blue-300 self-start">Notations</h2>
-
-  <img src="./images_for_slides/notations.png" class="max-h-96 object-contain border border-gray-700 rounded" />
-
-  <p class="mt-6 text-gray-400 text-sm text-center max-w-2xl">
-    legenda / comentário sobre esse bloco de fórmulas
-  </p>
-
-</div>
-
-
-
----
-
-<div class="flex flex-col h-full justify-center items-center px-8">
-
-  <h2 class="text-xl font-bold mb-6 text-blue-300 self-start">KeyGen — Round 1</h2>
-
-  <img src="./images_for_slides/keygen1.png" class="max-h-96 object-contain border border-gray-700 rounded" />
-
-  <p class="mt-6 text-gray-400 text-sm text-center max-w-2xl">
-    legenda / comentário sobre esse bloco de fórmulas
-  </p>
-
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-blue-300">KeyGen — Round 1</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/keygen1_2.png" class="max-h-full max-w-full object-contain" />
+  </div>
 </div>
 
 ---
 
-<div class="flex flex-col h-full justify-center items-center px-8">
-
-  <h2 class="text-xl font-bold mb-6 text-green-300 self-start">KeyGen — Round 2</h2>
-
-  <img src="./images_for_slides/keygen2.png" class="max-h-96 object-contain border border-gray-700 rounded" />
-
-  <p class="mt-6 text-gray-400 text-sm text-center max-w-2xl">
-    legenda / comentário sobre esse bloco de fórmulas
-  </p>
-
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-blue-300">KeyGen — Round 1</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/keygen1_3.png" class="max-h-full max-w-full object-contain" />
+  </div>
 </div>
 
 ---
 
-<div class="flex flex-col h-full justify-center items-center px-8">
-
-  <h2 class="text-xl font-bold mb-6 text-red-300 self-start">Sign(m) → (m, σ)</h2>
-
-  <img src="./images_for_slides/sign.png" class="max-h-96 object-contain border border-gray-700 rounded" />
-
-  <p class="mt-6 text-gray-400 text-sm text-center max-w-2xl">
-    legenda / comentário sobre esse bloco de fórmulas
-  </p>
-
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-blue-300">KeyGen — Round 1</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/keygen1_4.png" class="max-h-full max-w-full object-contain" />
+  </div>
 </div>
 
 ---
 
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-blue-300">KeyGen — Round 1</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/keygen1_5.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+<div class="flex flex-col items-center justify-center h-full gap-4">
+  <h2 class="text-4xl font-bold text-green-300">KeyGen — Round 2</h2>
+  <p class="text-gray-400 text-base max-w-xl">Each participant assembles their secret share — nobody ever holds the full key</p>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-green-300">KeyGen — Round 2</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/keygen2_1.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-green-300">KeyGen — Round 2</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/keygen2_2.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-green-300">KeyGen — Round 2</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/keygen2_3.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-green-300">KeyGen — Round 2</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/keygen2_4.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+<div class="flex flex-col items-center justify-center h-full gap-6">
+  <div class="text-6xl">⚙️</div>
+  <h2 class="text-5xl font-bold text-orange-300">Preprocess</h2>
+  <p class="text-gray-400 text-lg">Generating one-time nonces before signing</p>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-orange-300">Preprocess</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/preprocess1.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-orange-300">Preprocess</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/preprocess2.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-orange-300">Preprocess</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/preprocess3.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+layout: center
+class: text-center
+---
+
+<div class="flex flex-col items-center justify-center h-full gap-6">
+  <div class="text-6xl">✍️</div>
+  <h2 class="text-5xl font-bold text-red-300">Signing</h2>
+  <p class="text-gray-400 text-lg">Single-round threshold signing — indistinguishable from single-signer Schnorr</p>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-red-300">Sign(m) → (m, σ)</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/sign1.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-red-300">Sign(m) → (m, σ)</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/sign2.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-red-300">Sign(m) → (m, σ)</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/sign3.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-red-300">Sign(m) → (m, σ)</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/sign4.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-red-300">Sign(m) → (m, σ)</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/sign5.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-red-300">Sign(m) → (m, σ)</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/sign6.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-red-300">Sign(m) → (m, σ)</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/sign7.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+
+<div class="flex flex-col h-full">
+  <h2 class="text-2xl font-bold pt-10 px-12 text-red-300">Sign(m) → (m, σ)</h2>
+  <div class="flex-1 flex items-center justify-center px-8 pb-8">
+    <img src="./images_for_slides/sign8.png" class="max-h-full max-w-full object-contain" />
+  </div>
+</div>
+
+---
+  
 <div class="absolute inset-0">
   <img src="./images_for_slides/finish.png" class="w-full h-full object-cover" />
 </div>
