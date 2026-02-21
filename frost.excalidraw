@@ -1,0 +1,381 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+
+    {
+      "id": "box-dict", "type": "rectangle", "x": 40, "y": 40, "width": 1200, "height": 320,
+      "strokeColor": "#343a40", "backgroundColor": "#f8f9fa", "fillStyle": "solid",
+      "strokeWidth": 2, "roughness": 0, "opacity": 100, "seed": 101,
+      "version": 1, "versionNonce": 101, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "dict-title", "type": "text", "x": 60, "y": 55, "width": 400, "height": 30,
+      "text": "Notation / Dictionary", "fontSize": 22, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#343a40", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 102,
+      "version": 1, "versionNonce": 102, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "dict-n", "type": "text", "x": 60, "y": 100, "width": 1100, "height": 26,
+      "text": "n         number of participants in the signature scheme", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#343a40", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 103,
+      "version": 1, "versionNonce": 103, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "dict-t", "type": "text", "x": 60, "y": 134, "width": 1100, "height": 26,
+      "text": "t          threshold of the secret-sharing scheme", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#343a40", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 104,
+      "version": 1, "versionNonce": 104, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "dict-i", "type": "text", "x": 60, "y": 168, "width": 1100, "height": 26,
+      "text": "i          participant identifier for participant Pᵢ   (1 ≤ i ≤ n)", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#343a40", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 105,
+      "version": 1, "versionNonce": 105, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "dict-si", "type": "text", "x": 60, "y": 202, "width": 1100, "height": 26,
+      "text": "sᵢ         long-lived secret share for participant Pᵢ", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#343a40", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 106,
+      "version": 1, "versionNonce": 106, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "dict-Y", "type": "text", "x": 60, "y": 236, "width": 1100, "height": 26,
+      "text": "Y         long-lived group public key shared by all participants", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#343a40", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 107,
+      "version": 1, "versionNonce": 107, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "dict-Yi", "type": "text", "x": 60, "y": 270, "width": 1100, "height": 26,
+      "text": "Yᵢ         public key share for participant Pᵢ  =  g^sᵢ", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#343a40", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 108,
+      "version": 1, "versionNonce": 108, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "dict-m", "type": "text", "x": 60, "y": 304, "width": 1100, "height": 26,
+      "text": "m         message to be signed     |     λᵢ  Lagrange coefficient for participant i over set S", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#343a40", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 109,
+      "version": 1, "versionNonce": 109, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+
+    {
+      "id": "box-r1", "type": "rectangle", "x": 40, "y": 410, "width": 1200, "height": 470,
+      "strokeColor": "#1971c2", "backgroundColor": "#e7f5ff", "fillStyle": "solid",
+      "strokeWidth": 2, "roughness": 0, "opacity": 100, "seed": 201,
+      "version": 1, "versionNonce": 201, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-title", "type": "text", "x": 500, "y": 420, "width": 300, "height": 30,
+      "text": "FROST KeyGen — Round 1", "fontSize": 22, "fontFamily": 3,
+      "textAlign": "center", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 202,
+      "version": 1, "versionNonce": 202, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-s1a", "type": "text", "x": 60, "y": 464, "width": 1150, "height": 26,
+      "text": "1.  Every participant Pᵢ samples t random values (aᵢ₀, …, aᵢ₍ₜ₋₁₎) ←$ Zq, and uses these values as coefficients", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 203,
+      "version": 1, "versionNonce": 203, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-s1b", "type": "text", "x": 80, "y": 496, "width": 1100, "height": 26,
+      "text": "    to define a degree t−1 polynomial   fᵢ(x) = Σ aᵢⱼ xʲ   (j = 0…t−1)", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 204,
+      "version": 1, "versionNonce": 204, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-s2a", "type": "text", "x": 60, "y": 538, "width": 1150, "height": 26,
+      "text": "2.  Every Pᵢ computes a proof of knowledge to the corresponding secret aᵢ₀ by calculating σᵢ = (Rᵢ, μᵢ), such that", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 205,
+      "version": 1, "versionNonce": 205, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-s2b", "type": "text", "x": 80, "y": 570, "width": 1100, "height": 26,
+      "text": "    k ←$ Zq,   Rᵢ = gᵏ,   cᵢ = H(i, Φ, g^aᵢ₀, Rᵢ),   μᵢ = k + aᵢ₀ · cᵢ,   with Φ being a context string to prevent replay attacks.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 206,
+      "version": 1, "versionNonce": 206, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-s3", "type": "text", "x": 60, "y": 612, "width": 1150, "height": 26,
+      "text": "3.  Every participant Pᵢ computes a public commitment C̃ᵢ = ⟨φᵢ₀, …, φᵢ₍ₜ₋₁₎⟩,   where  φᵢⱼ = g^aᵢⱼ,   0 ≤ j ≤ t−1", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 207,
+      "version": 1, "versionNonce": 207, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-s4", "type": "text", "x": 60, "y": 650, "width": 1150, "height": 26,
+      "text": "4.  Every Pᵢ broadcasts C̃ᵢ, σᵢ to all other participants.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 208,
+      "version": 1, "versionNonce": 208, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-s5a", "type": "text", "x": 60, "y": 688, "width": 1150, "height": 26,
+      "text": "5.  Upon receiving C̃ₗ, σₗ from participants 1 ≤ ℓ ≤ n, ℓ ≠ i, participant Pᵢ verifies σₗ = (Rₗ, μₗ), aborting on failure,", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 209,
+      "version": 1, "versionNonce": 209, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-s5b", "type": "text", "x": 80, "y": 720, "width": 1100, "height": 26,
+      "text": "    by checking  Rₗ =? g^μₗ · φₗ₀^(−cₗ),   where  cₗ = H(ℓ, Φ, φₗ₀, Rₗ).", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 210,
+      "version": 1, "versionNonce": 210, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r1-s5c", "type": "text", "x": 80, "y": 752, "width": 1100, "height": 26,
+      "text": "    Upon success, participants delete {σₗ : 1 ≤ ℓ ≤ n}.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 211,
+      "version": 1, "versionNonce": 211, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+
+    {
+      "id": "box-r2", "type": "rectangle", "x": 40, "y": 930, "width": 1200, "height": 420,
+      "strokeColor": "#2f9e44", "backgroundColor": "#ebfbee", "fillStyle": "solid",
+      "strokeWidth": 2, "roughness": 0, "opacity": 100, "seed": 301,
+      "version": 1, "versionNonce": 301, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r2-title", "type": "text", "x": 500, "y": 940, "width": 300, "height": 30,
+      "text": "FROST KeyGen — Round 2", "fontSize": 22, "fontFamily": 3,
+      "textAlign": "center", "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 302,
+      "version": 1, "versionNonce": 302, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r2-s1a", "type": "text", "x": 60, "y": 984, "width": 1150, "height": 26,
+      "text": "1.  Each Pᵢ securely sends to each other participant Pₗ a secret share (ℓ, fᵢ(ℓ)),", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 303,
+      "version": 1, "versionNonce": 303, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r2-s1b", "type": "text", "x": 80, "y": 1016, "width": 1100, "height": 26,
+      "text": "    deleting fᵢ and each share afterward except for (i, fᵢ(i)), which they keep for themselves.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 304,
+      "version": 1, "versionNonce": 304, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r2-s2", "type": "text", "x": 60, "y": 1058, "width": 1150, "height": 26,
+      "text": "2.  Each Pᵢ verifies their shares by calculating:   g^fₗ(i) =? ∏ φₗₖ^(iᵏ mod q)   (k = 0…t−1),   aborting if the check fails.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 305,
+      "version": 1, "versionNonce": 305, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r2-s3", "type": "text", "x": 60, "y": 1100, "width": 1150, "height": 26,
+      "text": "3.  Each Pᵢ calculates their long-lived private signing share by computing  sᵢ = Σ fₗ(i)  (ℓ=1…n),  stores sᵢ securely, and deletes each fₗ(i).", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 306,
+      "version": 1, "versionNonce": 306, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r2-s4a", "type": "text", "x": 60, "y": 1142, "width": 1150, "height": 26,
+      "text": "4.  Each Pᵢ calculates their public verification share  Yᵢ = g^sᵢ,  and the group's public key  Y = ∏ⁿⱼ₌₁ φⱼ₀.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 307,
+      "version": 1, "versionNonce": 307, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r2-s4b", "type": "text", "x": 80, "y": 1174, "width": 1100, "height": 26,
+      "text": "    Any participant can compute the public verification share of any other participant by calculating:", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 308,
+      "version": 1, "versionNonce": 308, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "r2-s4c", "type": "text", "x": 80, "y": 1208, "width": 1100, "height": 26,
+      "text": "    Yᵢ = ∏ⁿⱼ₌₁ ∏ᵗ⁻¹ₖ₌₀  φⱼₖ^(iᵏ mod q)", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 309,
+      "version": 1, "versionNonce": 309, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+
+    {
+      "id": "box-sign", "type": "rectangle", "x": 40, "y": 1400, "width": 1200, "height": 680,
+      "strokeColor": "#e03131", "backgroundColor": "#fff5f5", "fillStyle": "solid",
+      "strokeWidth": 2, "roughness": 0, "opacity": 100, "seed": 401,
+      "version": 1, "versionNonce": 401, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-title", "type": "text", "x": 500, "y": 1410, "width": 300, "height": 30,
+      "text": "Sign(m) → (m, σ)", "fontSize": 22, "fontFamily": 3,
+      "textAlign": "center", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 402,
+      "version": 1, "versionNonce": 402, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-def", "type": "text", "x": 60, "y": 1452, "width": 1150, "height": 26,
+      "text": "S = set of α : t ≤ α ≤ n participants     B = ⟨(i, Dᵢ, Eᵢ)⟩ᵢ∈S  (ordered list)     H₁, H₂: hash functions with outputs in Z*q", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 403,
+      "version": 1, "versionNonce": 403, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-s1", "type": "text", "x": 60, "y": 1494, "width": 1150, "height": 26,
+      "text": "1.  SA begins by fetching the next available commitment for each participant Pᵢ ∈ S from Lᵢ and constructs B.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 404,
+      "version": 1, "versionNonce": 404, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-s2", "type": "text", "x": 60, "y": 1530, "width": 1150, "height": 26,
+      "text": "2.  For each i ∈ S, SA sends Pᵢ the tuple (m, B).", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 405,
+      "version": 1, "versionNonce": 405, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-s3", "type": "text", "x": 60, "y": 1566, "width": 1150, "height": 26,
+      "text": "3.  After receiving (m, B), each Pᵢ first validates the message m, and then checks Dₗ, Eₗ ∈ G* for each commitment in B, aborting if either check fails.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 406,
+      "version": 1, "versionNonce": 406, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-s4a", "type": "text", "x": 60, "y": 1602, "width": 1150, "height": 26,
+      "text": "4.  Each Pᵢ then computes the set of binding values  ρₗ = H₁(ℓ, m, B),  ℓ ∈ S.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 407,
+      "version": 1, "versionNonce": 407, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-s4b", "type": "text", "x": 80, "y": 1634, "width": 1100, "height": 26,
+      "text": "    Each Pᵢ then derives the group commitment  R = ∏ₗ∈S Dₗ · (Eₗ)^ρₗ,  and the challenge  c = H₂(R, Y, m).", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 408,
+      "version": 1, "versionNonce": 408, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-s5a", "type": "text", "x": 60, "y": 1676, "width": 1150, "height": 26,
+      "text": "5.  Each Pᵢ computes their response using their long-lived secret share sᵢ by computing", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 409,
+      "version": 1, "versionNonce": 409, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-s5b", "type": "text", "x": 80, "y": 1708, "width": 1100, "height": 26,
+      "text": "    zᵢ = dᵢ + (eᵢ · ρᵢ) + λᵢ · sᵢ · c,   using S to determine the i-th Lagrange coefficient λᵢ.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 410,
+      "version": 1, "versionNonce": 410, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-s6", "type": "text", "x": 60, "y": 1750, "width": 1150, "height": 26,
+      "text": "6.  Each Pᵢ securely deletes ((dᵢ, Dᵢ), (eᵢ, Eᵢ)) from their local storage, and then returns zᵢ to SA.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 411,
+      "version": 1, "versionNonce": 411, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-s7", "type": "text", "x": 60, "y": 1786, "width": 1150, "height": 26,
+      "text": "7.  The signature aggregator SA performs the following steps:", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 412,
+      "version": 1, "versionNonce": 412, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-7a", "type": "text", "x": 100, "y": 1822, "width": 1100, "height": 26,
+      "text": "7a.  Derive ρᵢ = H₁(i, m, B) and Rᵢ = Dᵢⱼ · (Eᵢⱼ)^ρᵢ for i ∈ S, and subsequently  R = ∏ᵢ∈S Rᵢ  and  c = H₂(R, Y, m).", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 413,
+      "version": 1, "versionNonce": 413, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-7b", "type": "text", "x": 100, "y": 1858, "width": 1100, "height": 26,
+      "text": "7b.  Verify the validity of each response by checking  g^zᵢ =? Rᵢ · Yᵢ^(c·λᵢ)  for each signing share zᵢ, i ∈ S.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 414,
+      "version": 1, "versionNonce": 414, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-7b2", "type": "text", "x": 120, "y": 1890, "width": 1080, "height": 26,
+      "text": "       If the equality does not hold, identify and report the misbehaving participant, and then abort. Otherwise, continue.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 415,
+      "version": 1, "versionNonce": 415, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-7c", "type": "text", "x": 100, "y": 1926, "width": 1100, "height": 26,
+      "text": "7c.  Compute the group's response  z = Σ zᵢ", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 416,
+      "version": 1, "versionNonce": 416, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "sign-7d", "type": "text", "x": 100, "y": 1962, "width": 1100, "height": 26,
+      "text": "7d.  Publish  σ = (R, z)  along with m.", "fontSize": 16, "fontFamily": 3,
+      "textAlign": "left", "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 1, "roughness": 0, "opacity": 100, "seed": 417,
+      "version": 1, "versionNonce": 417, "isDeleted": false, "groupIds": [],
+      "boundElements": [], "updated": 1, "link": null, "locked": false
+    }
+
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  },
+  "files": {}
+}
