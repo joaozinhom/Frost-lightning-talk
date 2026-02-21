@@ -37,15 +37,80 @@ title: FROST
 
 ---
 
-<div class="flex flex-col h-full items-center justify-center px-20">
+<div class="flex flex-col h-full items-start justify-center px-20 gap-8">
 
-  <h2 class="text-4xl font-bold mb-10 text-green-400 self-start">What is this FROST?</h2>
+  <h2 class="text-4xl font-bold text-green-400">Schnorr Multisig landscape</h2>
 
-  <ul class="text-xl leading-relaxed text-gray-200 space-y-8">
-    <li>• Its a Schnorr scheme that uses to have multisigs n-of-m</li>
-    <li>• Its different from Nunchuck scheme that uses Taproot, and its different from simple Musigs</li>
-    <li>• Like simple Musigs and Nunchuck schemes its not possible to an external observer know how many participants are in this contract and even how many sign</li>
-  </ul>
+  <div class="grid grid-cols-3 gap-6 w-full text-sm">
+
+  <div class="bg-white/5 rounded-xl p-5 border border-white/10">
+    <div class="text-blue-300 font-bold text-base mb-3">MuSig2</div>
+    <ul class="text-gray-300 space-y-2">
+      <li>• n-of-n only</li>
+      <li>• 2 rounds of communication</li>
+      <li>• No threshold — everyone signs</li>
+    </ul>
+  </div>
+
+  <div class="bg-white/5 rounded-xl p-5 border border-white/10">
+    <div class="text-purple-300 font-bold text-base mb-3">Taproot / FROST-like via script</div>
+    <ul class="text-gray-300 space-y-2">
+      <li>• t-of-n via script path</li>
+      <li>• Reveals the policy on-chain</li>
+      <li>• Each key stays independent</li>
+      <li>• Nunchuck uses this model</li>
+    </ul>
+  </div>
+
+  <div class="bg-white/5 rounded-xl p-5 border border-green-400/30 border-2">
+    <div class="text-green-300 font-bold text-base mb-3">FROST ✦</div>
+    <ul class="text-gray-300 space-y-2">
+      <li>• True t-of-n threshold</li>
+      <li>• Offline signers allowed</li>
+      <li>• Single round after preprocess</li>
+      <li>• Looks like one Schnorr sig</li>
+    </ul>
+  </div>
+
+  </div>
+
+  <p class="text-gray-500 text-sm italic">All three produce a valid Schnorr signature — an outside observer cannot tell them apart</p>
+
+</div>
+
+---
+
+<div class="flex flex-col h-full items-start justify-center px-20 gap-8">
+
+  <h2 class="text-4xl font-bold text-green-400">The intuition behind FROST</h2>
+
+  <div class="flex flex-col gap-6 max-w-3xl">
+
+  <div class="flex items-start gap-4">
+    <span class="text-2xl mt-1">🔪</span>
+    <div>
+      <div class="text-white font-semibold text-lg">The private key is split, never assembled</div>
+      <div class="text-gray-400">During KeyGen, the secret key is broken into <span class="text-green-300">n shares</span> using a polynomial. No single participant ever holds the full key — not even temporarily.</div>
+    </div>
+  </div>
+
+  <div class="flex items-start gap-4">
+    <span class="text-2xl mt-1">📐</span>
+    <div>
+      <div class="text-white font-semibold text-lg">The threshold comes from the polynomial degree</div>
+      <div class="text-gray-400">A polynomial of degree <span class="text-yellow-300">t−1</span> needs exactly <span class="text-yellow-300">t points</span> to be reconstructed. Each participant holds one point. Fewer than t participants? The secret stays hidden.</div>
+    </div>
+  </div>
+
+  <div class="flex items-start gap-4">
+    <span class="text-2xl mt-1">✍️</span>
+    <div>
+      <div class="text-white font-semibold text-lg">Signing happens in the exponent — the key never comes back</div>
+      <div class="text-gray-400">Each of the t signers produces a <span class="text-red-300">partial signature</span> using only their share. These partials are aggregated into one valid Schnorr signature — the secret was never reconstructed.</div>
+    </div>
+  </div>
+
+  </div>
 
 </div>
 
